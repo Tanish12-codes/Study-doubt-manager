@@ -1,0 +1,81 @@
+/* src/pages/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  .login-form {
+    background-color: var(--card);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--card);
+    color: var(--text);
+  }
+  
+  .login-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .login-btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+  }
+  
+  .login-btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+  }
+  
+  .emoji-note {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  /* Theme Variables */
+  :root {
+    --bg: #f9f9f9;
+    --text: #1a1a1a;
+    --card: #ffffff;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1f1f1f;
+  }
+  
+  

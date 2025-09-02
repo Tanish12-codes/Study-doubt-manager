@@ -1,0 +1,109 @@
+/* src/pages/auth.css */
+
+.auth-container {
+    height: 100vh;
+    width: 100vw;                    /* Ensures full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    box-sizing: border-box;         /* Prevent layout break */
+  }
+  
+  .auth-form {
+    background: rgba(255, 255, 255, 0.15);      /* Glass effect */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .auth-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.2rem;
+    background-color: var(--card);
+    color: var(--text);
+  }
+  
+  .auth-btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+  }
+  
+  .auth-btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+  }
+  
+  .auth-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .auth-note {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  /* 🔴 Error Message */
+  .auth-error {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  
+  /* 🎯 Wiggle Animation for Emoji */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    15% { transform: rotate(-10deg); }
+    30% { transform: rotate(10deg); }
+    45% { transform: rotate(-8deg); }
+    60% { transform: rotate(8deg); }
+    75% { transform: rotate(-4deg); }
+  }
+  
+  .wiggle-emoji {
+    animation: wiggle 1s infinite;
+    display: inline-block;
+  }
+  
+  /* 🌗 Theme Variables */
+  :root {
+    --bg: #f9f9f9;
+    --text: #1a1a1a;
+    --card: #ffffff;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1f1f1f;
+  }
+  
