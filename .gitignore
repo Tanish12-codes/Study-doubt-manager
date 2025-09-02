@@ -1,0 +1,9 @@
+# environment files
+.env
+
+# dependencies
+node_modules/
+
+# lock and extra files
+package-lock.json
+playground-*.mongodb.js
